@@ -1,0 +1,18 @@
+.projects {
+    font-family: "Ubuntu Condensed", sans-serif;
+    display: flex;
+    .projects-image {
+        height: 25rem;
+        img {
+            height: 100%;
+        }
+    }
+    .projects-details {
+        flex: 1;
+        list-style-type: none;
+        max-width: 40%;
+        h4 {
+            font-weight: 900;
+        }
+    }
+}
