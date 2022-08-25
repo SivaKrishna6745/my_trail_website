@@ -1,32 +1,51 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Button } from "react-bootstrap";
 import "./Contact.scss";
 
 function Contact() {
-    // function handleClick(e) {
-    //     e.preventDefault();
-    //     window.location = "mailto:krishnasiva6745@gmail.com";
-    // }
+    const contactName = useRef();
+    const contactNumber = useRef();
+    const contactMessage = useRef();
+    function handleClick(e) {
+        e.preventDefault();
+        const subject = contactMessage.current.value;
+        const body =
+            "I am: " +
+            contactName.current.value +
+            ";  My mobile number: " +
+            contactNumber.current.value;
+        window.location = `mailto:krishnasiva6745@gmail.com?subject=${subject}&body=${body}`;
+    }
     return (
         <form
-            className="form-group"
-            action="mailto:krishnasiva6745@gmail.com"
             method="POST"
-            enctype="multipart/form-data"
+            encType="multipart/form-data"
+            onSubmit={handleClick}
         >
             <div className="form-control">
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" />
+                <input type="text" ref={contactName} name="contact-name" />
             </div>
             <div className="form-control">
                 <label htmlFor="phnno">Mobile Number:</label>
-                <input type="number" id="phnno" />
+                <input
+                    type="number"
+                    ref={contactNumber}
+                    name="contact-number"
+                />
             </div>
             <div className="form-control">
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" cols="100" rows="5"></textarea>
+                <textarea
+                    cols="100"
+                    rows="5"
+                    ref={contactMessage}
+                    name="contact-message"
+                ></textarea>
             </div>
-            <Button variant="outline-primary">Submit</Button>
+            <Button type="submit" variant="outline-primary">
+                Submit
+            </Button>
         </form>
     );
 }
