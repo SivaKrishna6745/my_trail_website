@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.2bdbaed4.css",
-    "main.js": "/react-gh-pages/static/js/main.14c451ba.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.2bdbaed4.css.map": "/react-gh-pages/static/css/main.2bdbaed4.css.map",
-    "main.14c451ba.js.map": "/react-gh-pages/static/js/main.14c451ba.js.map"
+    "main.css": "/my_trail_website/static/css/main.2bdbaed4.css",
+    "main.js": "/my_trail_website/static/js/main.14c451ba.js",
+    "index.html": "/my_trail_website/index.html",
+    "main.2bdbaed4.css.map": "/my_trail_website/static/css/main.2bdbaed4.css.map",
+    "main.14c451ba.js.map": "/my_trail_website/static/js/main.14c451ba.js.map"
   },
   "entrypoints": [
     "static/css/main.2bdbaed4.css",
