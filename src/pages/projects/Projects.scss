@@ -1,6 +1,7 @@
 .projects {
     font-family: "Ubuntu Condensed", sans-serif;
     display: flex;
+    justify-content: space-evenly;
     .projects-image {
         height: 25rem;
         img {
@@ -8,7 +9,6 @@
         }
     }
     .projects-details {
-        flex: 1;
         list-style-type: none;
         max-width: 40%;
         h4 {
