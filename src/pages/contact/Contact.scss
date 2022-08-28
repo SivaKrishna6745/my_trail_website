@@ -1,11 +1,32 @@
-.form-group {
-    .form-control {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        input,
-        textarea {
-            margin-left: 2rem;
+.contact {
+    display: flex;
+    justify-content: space-around;
+    .form {
+        margin-top: 1rem;
+        .group {
+            min-height: 4rem;
+            input {
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;
+                width: 30rem;
+            }
+            input,
+            textarea {
+                background-image: linear-gradient(
+                    90deg,
+                    black,
+                    rgb(255, 0, 221)
+                );
+                background-size: 0% 2px;
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                transition: background linear 100ms;
+            }
+            input:focus,
+            textarea:focus {
+                background-size: 100% 2px;
+            }
         }
     }
 }
