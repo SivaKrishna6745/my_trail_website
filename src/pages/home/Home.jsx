@@ -6,7 +6,7 @@ function Home() {
         <>
             <div className="hero">
                 <img
-                    src="/images/avatar.png"
+                    src={process.env.PUBLIC_URL + "/images/avatar.png"}
                     className="avatar-image"
                     alt="avatar"
                 />

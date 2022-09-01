@@ -25,7 +25,10 @@ function Contact() {
     return (
         <div className="contact">
             <div>
-                <img src="images/contact.png" alt="contact" />
+                <img
+                    src={process.env.PUBLIC_URL + "/images/contact.png"}
+                    alt="contact"
+                />
             </div>
             <form
                 className="form"
