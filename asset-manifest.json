@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/my_trail_website/static/css/main.2bdbaed4.css",
-    "main.js": "/my_trail_website/static/js/main.14c451ba.js",
+    "main.js": "/my_trail_website/static/js/main.ddab5ede.js",
     "index.html": "/my_trail_website/index.html",
     "main.2bdbaed4.css.map": "/my_trail_website/static/css/main.2bdbaed4.css.map",
-    "main.14c451ba.js.map": "/my_trail_website/static/js/main.14c451ba.js.map"
+    "main.ddab5ede.js.map": "/my_trail_website/static/js/main.ddab5ede.js.map"
   },
   "entrypoints": [
     "static/css/main.2bdbaed4.css",
-    "static/js/main.14c451ba.js"
+    "static/js/main.ddab5ede.js"
   ]
 }
